@@ -1,0 +1,248 @@
+body{
+  background-color: #323339;
+  
+}
+
+/* ---------------------- Start Sidebar CSS ---------------------- */
+.sidebar-container{
+  background-color: #393B45;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  
+}
+
+.sidebar-container a{
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav{
+  padding: 5% 0% 5% 0%;
+}
+
+nav a{
+  display: flex;
+  align-items: center;
+  padding: 5% 5% 5% 5%;
+  font-size: 110%;
+  position: relative;
+}
+
+nav img{
+  padding-right: 2%;
+  padding-left: 3%;
+}
+
+.sidebar-header{
+  padding: 5% 5% 5% 5%;
+}
+
+.sidebar-header img{
+  width: 20%;
+  height: 20%;
+  padding-right: 2%;
+  padding-left: 3%;
+}
+
+.sidebar-header a{
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a::before {
+  content: '';
+  position: absolute;
+  width: 1.5%;
+  height: 0; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #F3B54A; 
+  transition: height 0.3s ease-out; 
+}
+
+.sidebar a:hover::before {
+  height: 100%;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar a.active::before {
+  height: 100%;
+}
+
+.sidebar a.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------- End Sidebar CSS ----------------------*/
+
+/* ---------------------- Start Contacts CSS ----------------------*/
+.contacts-content h2{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #D8D9DE;
+  font-size: 30px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+span{
+  color: #F3B54A;
+}
+
+.contacts-content h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #D8D9DE;
+  font-size: 40px;
+  white-space: normal; 
+  word-break: break-word; 
+  max-width: 500px; 
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.cncc{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  font-size: 15px;
+  white-space: normal; 
+  word-break: break-word; 
+  max-width: 500px; 
+  position: absolute;
+  top: 48%;
+  left: 25%;
+}
+
+/* Message */
+.cf-container{
+  background-color: #393B45;
+  height: 60%;
+  width: 30%;
+  position: absolute;
+  top: 18%;
+  left: 62%;
+  border-radius: 15px;
+}
+
+.cf-p{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #D8D9DE;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 18%;
+  left: 68%;
+}
+
+.flname{
+  height: 4%;
+  width: 25%;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  top: 30%;
+  left: 64%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+}
+
+.emailadd{
+  height: 4%;
+  width: 25%;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  top: 37%;
+  left: 64%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+}
+
+.msgbx{
+  height: 20%;
+  width: 25%;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  top: 44%;
+  left: 64.1%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+}
+
+input, textarea {
+  outline: none;
+  border: 1px solid transparent; 
+}
+
+input:focus, textarea:focus {
+  border: 3px solid #F3B54A; 
+}
+
+.button{
+  position: absolute;
+  top: 68%;
+  left: 73%;
+  border: none;
+  background: #F3B54A;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.2s;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.button:hover {
+  box-shadow: 0 0 0 4px #323339, 0 0 0 8px #F3B54A;
+}
+
+.email{
+  width: 100%;
+  max-width: 45px;
+  position: absolute;
+  top: 63%;
+  left: 25%;
+}
+
+.em-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  font-size: 15px;
+  position: absolute;
+  top: 61%;
+  left: 29%;
+}
+
+.em-add{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #F3B54A;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 64%;
+  left: 29%;
+}
+
+.em-add a{
+  text-decoration: none;
+  color: inherit;
+}

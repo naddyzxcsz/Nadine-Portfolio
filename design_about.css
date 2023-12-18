@@ -1,0 +1,561 @@
+body{
+  background-color: #323339;
+  
+}
+
+/* ---------------------- Start Sidebar CSS ---------------------- */
+.sidebar-container{
+  background-color: #393B45;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  
+}
+
+/*button*/
+button{
+  position: absolute;
+  top: 62%;
+  left: 55%;
+  border: none;
+  background: #F3B54A;
+  padding: 16px 30px;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.2s;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+button a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover {
+  box-shadow: 0 0 0 4px #323339, 0 0 0 8px #F3B54A;
+}
+
+.sidebar-container a{
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav{
+  padding: 5% 0% 5% 0%;
+}
+
+nav a{
+  display: flex;
+  align-items: center;
+  padding: 5% 5% 5% 5%;
+  font-size: 110%;
+  position: relative;
+}
+
+nav img{
+  padding-right: 2%;
+  padding-left: 3%;
+}
+
+.sidebar-header{
+  padding: 5% 5% 5% 5%;
+}
+
+.sidebar-header img{
+  width: 20%;
+  height: 20%;
+  padding-right: 2%;
+  padding-left: 3%;
+}
+
+.sidebar-header a{
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a::before {
+  content: '';
+  position: absolute;
+  width: 1.5%;
+  height: 0; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #F3B54A; 
+  transition: height 0.3s ease-out; 
+}
+
+.sidebar a:hover::before {
+  height: 100%;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar a.active::before {
+  height: 100%;
+}
+
+.sidebar a.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------- End Sidebar CSS ----------------------*/
+
+/* ---------------------- Start About CSS ----------------------*/
+.about-content h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 40px;
+  color: #6E7889;
+  top: 3%;
+  left: 25%;
+  position: absolute;
+}
+
+span{
+  color: #F3B54A;
+}
+
+.about-content img{
+  width: 100%;
+  max-width: 300px;
+  top: 10%;
+  left: 76%;
+  position: absolute;
+}
+
+.about-content p{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  color: #D8D9DE;
+  text-align: justify;
+  white-space: normal; 
+  word-break: break-word; 
+  max-width: 750px; 
+  line-height: 1.6;
+  top: 15%;
+  left: 25%;
+  position: absolute;
+}
+
+.about-content button{
+  position: absolute;
+  top: 53%;
+  left: 79%;
+}
+
+.ab-bottom-space{
+  background-color: #323339;
+  position: absolute;
+  top: 175%;
+  left: 30%;
+  height: 3%;
+  width: 10%;
+}
+
+/* --- Interests ---*/
+.intr{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #D8D9DE;
+  font-size: 40px;
+  font-weight: bold;
+  top: 75%;
+  left: 25%;
+  position: absolute;
+}
+
+.i-line{
+  background-color: #F3B54A;
+  height: 1%;
+  width: 47%;
+  position: absolute;
+  top: 84%;
+  left: 37%;
+}
+
+/* Netflix */
+.nf-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 91%;
+  left: 28%;
+}
+
+.nf-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 92.1%;
+  left: 28.5%;
+}
+
+.nf-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 91%;
+  left: 31%;
+}
+
+/* Photography */
+.cam-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 91%;
+  left: 48%;
+}
+
+.cam-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 92.1%;
+  left: 49%;
+}
+
+.cam-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 91%;
+  left: 52%;
+}
+
+/* Videography */
+.vid-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 91%;
+  left: 68%;
+}
+
+.vid-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 92.1%;
+  left: 69.1%;
+}
+
+.vid-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 90.8%;
+  left: 72.3%;
+}
+
+/* Gaming */
+.game-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 105%;
+  left: 28%;
+}
+
+.game-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 106.3%;
+  left: 29%;
+}
+
+.game-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 105%;
+  left: 32%;
+}
+
+/* Drawing */
+.dr-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 105%;
+  left: 48%;
+}
+
+.dr-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 106.1%;
+  left: 49%;
+}
+
+.dr-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 105%;
+  left: 52%;
+}
+
+/* Music */
+.ms-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 105%;
+  left: 68%;
+}
+
+.ms-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 106.1%;
+  left: 69.1%;
+}
+
+.ms-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 105%;
+  left: 72.3%;
+}
+
+/* --- Skills ---*/
+.abt{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #D8D9DE;
+  font-size: 40px;
+  font-weight: bold;
+  top: 120%;
+  left: 25%;
+  position: absolute;
+}
+
+.a-line{
+  background-color: #F3B54A;
+  height: 1%;
+  width: 51.5%;
+  position: absolute;
+  top: 127%;
+  left: 32.5%;
+}
+
+/* C++ */
+.c-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 135%;
+  left: 28%;
+}
+
+.c-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 136.1%;
+  left: 29%;
+}
+
+.c-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 135%;
+  left: 32%;
+}
+
+/* Python */
+.py-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 135%;
+  left: 48%;
+}
+
+.py-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 136.1%;
+  left: 49%;
+}
+
+.py-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 135%;
+  left: 52%;
+}
+
+/* HTML */
+.ht-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 135%;
+  left: 68%;
+}
+
+.ht-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 136.3%;
+  left: 69.2%;
+}
+
+.ht-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 135%;
+  left: 72.3%;
+}
+
+/* CSS */
+.cs-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 150%;
+  left: 28%;
+}
+
+.cs-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 151.1%;
+  left: 29%;
+}
+
+.cs-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 150%;
+  left: 32%;
+}
+
+/* Java */
+.jv-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 150%;
+  left: 48%;
+}
+
+.jv-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 151.1%;
+  left: 49%;
+}
+
+.jv-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 150%;
+  left: 52%;
+}
+
+/* Editing */
+.ed-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 150%;
+  left: 68%;
+}
+
+.ed-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 151.1%;
+  left: 69.2%;
+}
+
+.ed-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 150%;
+  left: 72.3%;
+}
+
+/* Web Designing */
+.wbd-container{
+  background-color: #393B45;
+  height: 7%;
+  width: 15%;
+  border-radius: 7px;
+  position: absolute;
+  top: 165%;
+  left: 28%;
+}
+
+.wbd-img{
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 166%;
+  left: 29%;
+}
+
+.wbd-p{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #D8D9DE;
+  position: absolute;
+  top: 165%;
+  left: 32%;
+}
+/* ---------------------- End About CSS ----------------------*/
